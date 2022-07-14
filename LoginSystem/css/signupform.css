@@ -1,0 +1,81 @@
+#signupform{
+    position: absolute;
+
+    padding: 10px 20px;
+    padding-bottom: 20x;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+
+    border-radius: 20px;
+    border: 4px solid rgb(42,75,129);
+
+    color: black;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 20px 20px 2px 0 rgb(0, 0, 0);
+
+    z-index: 1;
+}#signupform input{
+    padding: 10px 0;
+}
+#signupform input:not(input[type="button"], input[type="submit"]){
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+#FL{
+    display: inline-flex;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+}
+#FL input{
+    width: 49%;
+}
+#FL input:first-child{
+    margin-right: 10px;
+}
+
+#button-wrapper{
+    display: flex;
+    justify-content: right;
+
+    padding-top: 20px;
+}#button-wrapper input{
+    padding: 10px 10px;
+
+    border-color: none;
+
+    border-radius: 10px;
+
+    font-size: 20px;
+}#button-wrapper input[type="button"]{
+    margin-right: 5px;
+
+    background-color: white;
+    border-color: black;
+}#button-wrapper input[type="submit"]{
+    color: white;
+    background-color: rgb(10,149,255);
+    border: none;
+}
+#designcircle{
+    position: absolute;
+
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    width: 1200px;
+    height: 1200px;
+
+    border-radius: 50%;
+    border: 20px solid rgb(222,0,47);
+
+    background-color: darkgrey;
+
+    z-index: 0;
+}

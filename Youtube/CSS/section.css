@@ -1,0 +1,46 @@
+#video-viewer{
+    position: absolute;
+
+    padding: 25px;
+    padding-bottom: 500px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    top:121px;
+    left:250px;
+
+    width: 1219px;
+
+    z-index: -1;
+
+    background-color: rgb(33, 33, 33);
+
+    overflow: hidden;
+}
+
+#video-viewer img{
+    width: 295px;
+    height: 165px;
+}
+
+#video-viewer h1{
+    font-size: 15px;
+
+    color: white;
+}
+
+#video-viewer h5{
+    padding: 1px 0;
+
+    color:rgb(164, 164, 164);
+}
+
+#video-viewer h5:not(:first-of-type){
+    display: inline-flex;
+}
+
+.video{
+    width: 295px;
+    margin-bottom: 50px;
+}
