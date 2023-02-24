@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>So, How's The Weather</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <link rel="stylesheet" href="style/index.css" type="text/css">
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
+</head>
+<body>
+    <div class="top">
+        <h1 id="header">So, How's The Weather?</h1>
+        <p id="description">
+            Simply click on "My Weather?" to get weather information about your location, or
+            click on "This Weather?" to get weather information about the marked location.
+        </p>
+        
+        <p id="userLocation">
+            <span>Latitude: <span id="userLat"></span></span>
+            <span>|</span>
+            <span>Longitude: <span id="userLon"></span></span> 
+        </p>
+        <div class="buttons">
+            <button id="myWeather">My Weather?</button>
+            <button id="thisWeather">This Weather?</button>
+        </div>
+
+        <div class="search_container">
+            <form id="searchForm">
+                <input id="search_box" type="text" placeholder="Search" name="searchBox">
+                <button id="search_btn" type="submit"><img src="img/search.png" alt="N/A"></button>
+            </form>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="weatherInfo_Map">
+        
+            <div id="weatherInfo">
+                <button id="mini">Minimize</button>
+                <p>
+                    The weather in <span id="country"></span>, 
+                    <span id="village"></span> {<span id="lat"></span>°, 
+                    <span id="lon"></span>°} is <span id="weatherDesc"></span>
+                    with a temperature of <span id="temp"></span> °C. Altitude is: <span id="altitude"></span>m
+                </p>
+            </div>
+            
+            <div class="map_container">
+                <div id="map"></div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/getGeolocation.js"></script>    
+    <script src="script/initializeMap.js"></script>
+    <script src="script/onClickManualLoc.js"></script>
+    <script src="script/onClickMy.js"></script>
+    <script src="script/minimize.js"></script>
+    <script src="script/searchForm.js"></script>
+</body>
+</html>

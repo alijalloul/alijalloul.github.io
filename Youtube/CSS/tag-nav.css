@@ -1,0 +1,26 @@
+#tag-nav{
+    padding: 10px 0;
+
+    position: fixed;
+    width: 100%;
+    top: 62px;
+    left: 250px;
+
+    border-top: 2px solid rgb(52, 52, 52);
+    border-bottom: 2px solid rgb(52, 52, 52);
+
+    background-color: rgb(32, 32, 32);
+}
+
+.tag-btns{
+    padding: 10px 15px;
+    margin: 0 5px;
+
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 20px;
+
+    text-transform: capitalize;
+
+    color: white;
+    background-color: rgb(55, 55, 55);
+}

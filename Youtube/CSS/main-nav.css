@@ -1,0 +1,163 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+i{
+	background: transparent;
+}
+
+#main-nav{
+	padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	background-color: rgb(33, 33, 33);
+	color: white;
+}
+
+#start{
+	display: inline-flex;
+	margin-left: 30px;
+
+	background-color: transparent;
+}
+
+#ytb-icon{
+	display: inline-flex;
+	align-items: center;
+
+	background-color: transparent;
+
+	cursor: pointer;
+}
+#ytb-icon img{
+	width: 35px;
+	height: 35px;
+
+	background-color: transparent;
+}
+#ytb-icon h1{
+	font-stretch: ultra-condensed;
+	font-weight: bold;
+	letter-spacing: -3px;
+
+	color: white;
+	background-color: transparent;
+}
+
+#guide-icon{
+	padding-right: 25px;
+
+	border: none;
+
+	font-size: 20px;
+
+	background-color: transparent;
+	color: white;
+}
+
+.search-box{
+	margin-left: 100px;
+
+	display: inline-flex;
+	background-color: transparent;
+}
+
+.search-txt-btn{
+	display: inline-flex;
+
+ 	width: 600px;
+
+	border: 1px solid rgb(50, 50, 50);
+	border-radius: 2px;
+
+	background-color: rgb(18, 18, 18);
+}
+
+.search-txt{
+	margin: 0;
+	padding: 11px 0;
+	padding-left: 10px;
+	z-index: 1;
+
+	width: 100%;
+
+	font-size: 15px;
+
+	border: none;
+	border-radius: 5px;
+
+	background-color: rgb(18, 18, 18);
+	color: white;	
+}
+
+.search-btn{
+	padding: 11px 25px;
+
+	background-color: rgb(50, 50, 50);
+	color: white;
+
+	cursor: pointer;
+}
+.voice-to-txt{
+
+	padding: 0 15px;
+	margin-left: 8px;
+
+	border: none;
+	border-radius: 50%;
+
+	background-color: rgb(18, 18, 18);
+	color: white;
+
+	cursor: pointer;
+}
+
+#buttons{
+	display: inline-flex;
+	vertical-align: middle;
+
+	margin-right: 50px;
+
+	background-color: transparent;
+
+}
+#buttons img{	
+	height: 25px;
+	width: 25px;
+
+	background-color: transparent;
+}
+.btns{
+	border: none;
+	margin-left: 30px;
+
+	background-color: transparent;
+
+	cursor: pointer;
+}
+
+#profile{
+	padding: 5px 10px;
+
+	font-size: 20px;
+
+	border-radius: 50%;
+
+	background-color: rgb(70, 90, 101);
+	color: white;
+
+}
+
+
+#side-nav{
+	overflow: hidden;
+	overflow-y: scroll;
+	width: 200px;
+	height: 100%px;
+}
